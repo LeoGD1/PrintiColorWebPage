@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.6)), url(../images/img3.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.container-navbar .logo a .print{
+    width: 110px;
+    cursor: pointer;
+}
+
+.container-navbar  .enlaces{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.container-navbar .enlaces a{
+    margin: 0px 10px;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.hamburguesa img{
+    width: 30px;
+    display: none;
+}
+
+.main-text {
+    display : flex;
+    height: 60%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.main-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-text h2 {
+    font-weight: 300;
+}
+
+/*CONTENEDOR GENERAL*/
+.contenedor {
+    width: 90%;
+    padding: 35px 0;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.titulos {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #1b1919;
+}
+    
+.form {
+    width: 70%;
+    margin: auto auto;
+}
+.form-header p{
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    color: #1b1919;
+}
+
+.form-input, .form-textarea {
+    border: none;
+    outline: none;
+    background: rgba(236, 236, 236);
+    border-bottom: 2px solid #ff0000;
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #1b1919;
+    font-weight: 300;
+
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.contenedor .form .form-textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+.contenedor .form .btn-submit {
+    background: #ff0000;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    border: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.7);
+    float: right;
+    cursor: pointer;
+}
+
+.contenedor .form .btn-submit:active {
+    background: #da0101;
+    transform: translateY(2px);
+}
+
+
+
+
+/*footer*/
+
+.footer {
+    background-color: #1b1919;
+}
+
+.listas-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.listas-footer ul{
+    list-style: none;
+}
+
+.listas-footer .titulos-footer{
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.listas-footer ul a, .elementos {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0 10px 0;
+}
+
+.listas-footer ul .elementos:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+
+.listas-footer ul a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+.nombre h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*media querys*/
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 400px;
+        background-position: center;
+    }
+    .container-navbar {
+        justify-content: space-between;
+        background-color: #ff0000;
+        position: fixed;
+        width: 100%;
+    }
+
+    .container-navbar .logo a .print{
+        width: 90px;
+    }
+
+    .container-navbar .enlaces {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #ff0000;
+        width: 60%;
+        height: 100vh;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .enlaces{
+        transform: translateX(-100%); 
+    } 
+
+    .activar {
+        transform: translatex(0%);
+    }
+
+    .container-navbar .enlaces li { /*  */
+        width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:first-child { /*  */
+        margin-top: 2rem
+    }
+
+    .container-navbar .enlaces li:hover {   /*  */
+        background: #fff;
+    }
+
+    .container-navbar .enlaces li a{ /*  */
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:hover > a { /*  */
+        color: #ff0000;
+    }
+
+    .hamburguesa img{
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-text {
+        height: 400px;
+        align-items: center;
+    }
+
+    .listas-footer {
+        justify-content: space-around;
+    }
+
+    .listas-footer .titulos-footer {
+        font-size: 15px;
+    }
+
+    .listas-footer .titulos-footer .elemen{
+        font-size: 10px;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .titulos {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 27px;
+        font-weight: bold;
+        color: #1b1919;
+    }
+
+    .form-header p{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: 385px) {
+    header {
+        height: 400px;
+        background-position: center;
+    }
+
+
+    .main-text {
+        padding-left: 20px;
+        height: 400px;
+        align-items: flex-start;
+    }
+
+    .main-text h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+    }
+
+    .main-text .cta {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .form {
+        width: 100%;
+    }
+
+    .acerca-de, .Telefonos {
+        width: 45%
+    }
+}

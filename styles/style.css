@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.6)), url(../images/img1.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.container-navbar .logo a .print{
+    width: 110px;
+    cursor: pointer;
+}
+
+.container-navbar  .enlaces{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.container-navbar .enlaces a{
+    margin: 0px 10px;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.hamburguesa img{
+    width: 30px;
+    display: none;
+}
+
+.wave {
+    bottom: 0;   
+    position: absolute;
+    width: 100%;
+}
+
+.main-text {
+    display: flex;
+    height: 405px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.main-text h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.main-text h2 {
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.main-text .cta {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.main-text > .cta:hover {
+    background-color: #ffffff;
+    transition: all ease .3s;
+    color: #000;
+}
+
+/*SECCION 1 ¿QUE HACEMOS?*/
+.titulos {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #1b1919;
+}
+
+
+.contenedor-que-hacemos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-que-hacemos img{
+    width: 40%;
+} 
+
+.contenido-textos {
+    margin-left: 30px;
+    width: 40%;
+}
+
+.contenido-textos span{
+    background-color: #ff0000;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 10px;
+}
+
+.contenido-textos p{
+    font-weight: 300;
+    margin: 5px 0px 30px 15px;
+    text-align: justify;
+}
+
+/*Galeria*/
+
+.nuestro-trabajo{
+    background: #eaeaea;
+}
+
+.contenedor {
+    padding: 35px 0;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contenedor-nuestro-trabajo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.contenedor-nuestro-trabajo .imgs {
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+.contenedor-nuestro-trabajo .imgs:hover {
+    transform: translate(0, -10px);
+    transition: all ease .7s;
+}
+
+        /*opiniones*/
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.cards .card {
+    display: flex;
+    width: 40%;
+    background-color: #ff0000;
+    padding: 10px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+.cards .card span {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin: 10px;
+}
+
+.cards .card p {
+    color: #fff;
+    margin: 10px 10px 10px 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #1b1919;
+}
+
+.listas-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.listas-footer ul{
+    list-style: none;
+}
+
+.listas-footer .titulos-footer{
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.listas-footer ul a, .elementos {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0 10px 0;
+}
+
+.listas-footer ul .elementos:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+
+.listas-footer ul a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+.nombre h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*Media*/
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 500px;
+        background-position: center;
+    }
+
+    .container-navbar {
+        justify-content: space-between;
+        background-color: #ff0000;
+        position: fixed;
+        width: 100%;
+    }
+
+    .container-navbar .logo a .print{
+        width: 90px;
+    }
+
+    .contenedor-nuestro-trabajo .imgs:hover {
+        transform: none;
+        transition: none;
+    }
+
+    .container-navbar .enlaces {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #ff0000;
+        width: 60%;
+        height: 100vh;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .enlaces{
+        transform: translateX(-100%); 
+    } 
+
+    .activar {
+        transform: translatex(0%);
+    }
+
+    .container-navbar .enlaces li {
+        width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:first-child {
+        margin-top: 2rem
+    }
+
+    .container-navbar .enlaces li:hover {
+        background: #fff;
+    }
+
+    .container-navbar .enlaces li a{
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:hover > a {
+        color: #ff0000;
+    }
+
+    .hamburguesa img{
+        display: block;
+        cursor: pointer;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    .main-text {
+        height: 500px;
+    }
+
+    .contenedor{
+        width: 90%;
+    }
+
+    .titulos {
+        font-size: 24px;
+    }
+    .contenedor-que-hacemos {
+        flex-direction: column;
+        width: 90%;
+    }
+    .contenedor-que-hacemos .img-que-hacemos {
+        width: 80%;
+    }
+    .contenido-textos {
+        width: 100%;
+    }
+
+    .contenedor-nuestro-trabajo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-nuestro-trabajo .imgs {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards .card {
+        width: 100%;
+    }
+
+    .listas-footer {
+        justify-content: space-around;
+    }
+
+    .listas-footer .titulos-footer {
+        font-size: 15px;
+    }
+
+    .listas-footer .titulos-footer .elemen{
+        font-size: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 385px) {
+    header {
+        height: 400px;
+        background-position: center;
+    }
+
+    .main-text {
+        padding-left: 20px;
+        height: 400px;
+        align-items: flex-start;
+    }
+
+    .main-text h1 {
+        font-size: 50px;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+    }
+
+    .main-text .cta {
+        margin-top: 10px;
+        font-size: 15px;
+    } 
+
+    .listas-footer {
+        flex-wrap: wrap;
+    }
+
+    .acerca-de, .Teléfonos {
+        width: 45%
+    }
+}
+
+
+
+
+
+
+
+
+
+

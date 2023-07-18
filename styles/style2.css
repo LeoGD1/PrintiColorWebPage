@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background: linear-gradient(rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.6)), url(../images/img2.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.container-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.container-navbar .logo a .print{
+    width: 110px;
+    cursor: pointer;
+}
+
+.container-navbar  .enlaces{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.container-navbar .enlaces a{
+    margin: 0px 10px;
+}
+
+.container-navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.hamburguesa img{
+    width: 30px;
+    display: none;
+}
+
+.main-text {
+    display : flex;
+    height: 60%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.main-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-text h2 {
+    font-weight: 300;
+}
+
+/*SECCION 1*/
+
+.contenedor {
+    width: 90%;
+    padding: 35px 0;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.titulos {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #1b1919;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.alineacion-descripcion {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.descripcion img {
+    width: 40%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+.descripcion .textos-descripcion {
+    width: 40%;
+    text-align: justify;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+.descripcion .textos-descripcion p{
+    margin-bottom: 10px;
+}
+
+.descripcion .textos-descripcion ul{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.descripcion .textos-descripcion ul li span{
+    padding: 4px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+/*SECCION 2*/
+
+.alineacion-ubicacion {
+    text-align: left;
+    margin-left: 65px;
+}
+
+.contenedor-ubicacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-ubicacion p {
+    width: 40%;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenedor-ubicacion img {
+    width: 40%;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+}
+
+/*PORTAFOLIO*/
+
+.section_portafolio{
+    width: 100%;
+    padding: 35px 0;
+    max-width: 1300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.contenedor_portafolio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contenedor_portafolio .contenedor_imagenes {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.contenedor_portafolio .contenedor_imagenes .images{
+    width: 350px;
+    height: 250px;
+    z-index: 3;
+}
+
+.contenedor_portafolio .contenedor_imagenes .hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    display: flex;
+    width: 350px;
+    height: 260px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.1s ease-in-out;
+}
+
+.contenedor_portafolio .contenedor_imagenes .hover .texto-hover {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.contenedor_imagenes:hover .hover{
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*seccion tecnologias*/
+
+.contenedor_tecnologias {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor_tecnologias .iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.contenedor_tecnologias .iconos img {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.contenedor_tecnologias .iconos .texto_tecnologias{
+    color: #1b1919;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #1b1919;
+}
+
+.listas-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.listas-footer ul{
+    list-style: none;
+}
+
+.listas-footer .titulos-footer{
+    font-size: 23px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.listas-footer ul a, .elementos {
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0 10px 0;
+}
+
+.listas-footer ul .elementos:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+
+.listas-footer ul a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+    transition: all ease .2s
+}
+.nombre h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*MEDIA QUERY'S*/
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 500px;
+        background-position: center;
+    }
+    .container-navbar {
+        justify-content: space-between;
+        background-color: #ff0000;
+        position: fixed;
+        width: 100%;
+    }
+
+    .container-navbar .logo a .print{
+        width: 90px;
+    }
+
+    .contenedor_imagenes:hover .hover{
+        transform: none;
+        transition: none;
+    }
+
+    .container-navbar .enlaces {
+        position: fixed;
+        flex-direction: column;
+        justify-content: flex-start; /*  */
+        align-items: center;
+        background-color: #ff0000;
+        width: 60%;
+        height: 100vh;
+        top: 70px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .enlaces{
+        transform: translateX(-100%); 
+    } 
+
+    .activar {
+        transform: translatex(0%);
+    }
+
+    .container-navbar .enlaces li { /*  */
+        width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:first-child { /*  */
+        margin-top: 2rem
+    }
+
+    .container-navbar .enlaces li:hover {   /*  */
+        background: #fff;
+    }
+
+    .container-navbar .enlaces li a{ /*  */
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 500;
+        transition: all .3s ease-in-out;
+    }
+
+    .container-navbar .enlaces li:hover > a { /*  */
+        color: #ff0000;
+    }
+
+    .hamburguesa img{
+        display: block;
+        cursor: pointer;
+    }
+
+    .main-text {
+        height: 500px;
+        align-items: flex-start;
+    }
+
+    .main-text h1, h2 {
+        margin-left: 20px;
+    }
+
+    .alineacion-descripcion {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .descripcion {
+        flex-direction: column;
+    }
+
+    .descripcion  img {
+        width: 80%;
+        margin-bottom: 20px;;
+    }
+
+    .descripcion .textos-descripcion {
+        width: 90%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .contenedor-ubicacion {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-ubicacion p {
+        width: 90%; 
+    }
+    
+    .contenedor-ubicacion img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .alineacion-ubicacion {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .listas-footer {
+        justify-content: space-around;
+    }
+
+    .listas-footer .titulos-footer {
+        font-size: 15px;
+    }
+
+    .listas-footer .titulos-footer .elemen{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 385px) {
+    header {
+        height: 400px;
+        background-position: center;
+    }
+
+    .main-text {
+        padding-left: 20px;
+        height: 400px;
+        align-items: flex-start;
+    }
+
+    .main-text h1 {
+        font-size: 50px;
+    }
+
+    .main-text h2 {
+        font-size: 25px;
+    }
+
+    .main-text .cta {
+        margin-top: 10px;
+        font-size: 15px;
+    } 
+
+    .listas-footer {
+        flex-wrap: wrap;
+    }
+
+    .acerca-de, .Teléfonos {
+        width: 45%
+    }
+}

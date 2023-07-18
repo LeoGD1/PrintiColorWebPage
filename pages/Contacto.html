@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printi Color | Contacto</title>
+    <link rel="stylesheet" href="../styles/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <header>
+        <nav class="container-navbar">
+            <div class="logo">
+                <a name="ancla1">
+                    <img class="print" src="../images/logo_blanco.png">
+                </a>
+            </div>
+            <div class="hamburguesa">
+                <img id="hamburguesa" class src="../images/menu-icon.svg">
+            </div>
+            <ul class="enlaces" >
+                <li><a href="../index.html">Inicio</a>
+                <li><a href="../pages/Quienes_Somos.html">Portafolio</a>
+                <li><a href="#tres">Contacto</a>
+            </ul>
+        </nav>
+        <div class="main-text">
+            <h1>¡Contactanos!</h1>
+            <h2>¡Envía un mensaje a nuestro correo!</h2>
+        </div>
+    </header>
+    <section class="contenedor">
+        <div class="form-header">
+            <h1 class="titulos">Contactanos</h1>
+            <p>Para poder contactar con nosotros envía un correo a <b>printi.color75@hotmail.com</b> o bien, completa el siguiente formulario</p>
+        </div>
+
+        <form action="https://formspree.io/f/mgebjoke" class="form" method="POST">
+            
+            <label class="form-label">Nombres:</label>
+            <input type="text" name="Nombre" class="form-input" placeholder="Escriba aqui su nombre" required>
+
+            <label class="form-label">Asunto:</label>
+            <input type="text" name="Asunto" class="form-input" placeholder="Escriba aquí el asunto" required>
+
+            <label class="form-label">Correo electrónico:</label>
+            <input type="text" name="Correo" class="form-input" placeholder="Escriba aquí su correo" required>
+
+            <label class="form-label">Mensaje:</label>
+            <textarea type="text" name="Mensaje" class="form-textarea" placeholder="Aquí escriba su mensaje" required></textarea>
+
+            <input type="submit" class="btn-submit" value="Enviar mensaje">
+
+        </form>
+    </section>
+    
+    <section class="footer">
+        <div class="contenedor">
+            <div class="listas-footer">
+                <ul class="acerca-de">
+                    <li class="titulos-footer">Acerca de
+                    <li class="elementos"><a href="../index.html">Inicio</a>
+                    <li class="elementos"><a href="../pages/Quienes_Somos.html">Portafolio</a>
+                    <li class="elementos"><a href="#">Contacto</a>
+                </ul>
+                <ul class="Telefonos">
+                    <li class="titulos-footer">Teléfonos
+                    <li class="elementos">729-168-7966
+                    <li class="elementos">722-778-5391
+                </ul>
+                <ul class="redes-sociales">
+                    <li class="titulos-footer">Redes sociales
+                    <li class="elementos"><a href="https://www.facebook.com/PrintiColor-605830169880480" target="_blank">Facebook</a>
+                </ul>
+            </div>
+            <div class="nombre">
+                <hr>
+                <h2>Rubén G.A. | Printi Color </h2>
+            </div>
+        </div>
+    </section>
+    <script src="../js/main.js"></script>
+</body>
+</html>
